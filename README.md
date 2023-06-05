@@ -99,6 +99,13 @@ To install a C++ compiler on Windows 10/11, follow these steps:
    * C++ CMake tools for Windows
 3. Download the MinGW installer from the [MinGW website](https://sourceforge.net/projects/mingw/).
 4. Run the installer and select the "gcc" component.
+5. Install pytorch wil cuda support
+
+```
+pip uninstall torch torchvision
+pip cache purge
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+```
 
 ### NVIDIA Driver's Issues:
 Follow this [page](https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-22-04) to install NVIDIA Drivers. 
